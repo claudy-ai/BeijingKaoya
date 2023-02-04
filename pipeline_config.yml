@@ -1,0 +1,11 @@
+nodes:
+  #   - input.live
+  - input.recorded:
+      # source: https://storage.googleapis.com/peekingduck/videos/wave.mp4
+      input_dir: 'C:\Users\csjsh\Downloads\IMG_3174.MP4'
+  - model.yolo:
+      detect_ids: [0]
+  - draw.bbox
+  #   - output.screen
+  - output.media_writer:
+      output_dir: 'C:\Users\csjsh\Downloads'
