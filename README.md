@@ -1,6 +1,14 @@
 # BeijingKaoya
 National AI Student Challenge 2022
 
+# Steps to use BeijingKaoya Solution to chase birds away :) 
+1. Install PeekingDuck on your computer 
+- follow this https://peekingduck.readthedocs.io/en/stable/getting_started/02_standard_install.html#install-peekingduck
+
+2. Ensure you have a webcamera installed to your computer 
+
+
+3. Use the Yml file in the repo and run in your terminal 'peekingduck run; 
 
 
 # Problem Statement : 
