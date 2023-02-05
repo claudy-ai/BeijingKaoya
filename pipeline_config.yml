@@ -2,16 +2,22 @@ nodes:
   - input.recorded:
       #   replace the link below with the path of your recorded video containing birds
       input_dir: 'C:\Users\csjsh\Downloads\IMG_3226.MP4'
+
   - model.efficientdet:
       detect: ["bird"]
+
   - dabble.tracking:
       tracking_type: "iou"
   - dabble.statistics:
       maximum: obj_attrs["ids"]
+
   - draw.bbox
+
   - draw.tag:
       show: ["ids"]
+
   - draw.legend:
       show: ["cum_max"]
+
   - output.media_writer:
       output_dir: 'C:\Users\csjsh\Downloads'
