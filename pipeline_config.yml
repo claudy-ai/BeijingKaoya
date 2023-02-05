@@ -1,11 +1,37 @@
 nodes:
   #   - input.live
   - input.recorded:
-      # source: https://storage.googleapis.com/peekingduck/videos/wave.mp4
-      input_dir: 'C:\Users\csjsh\Downloads\IMG_3174.MP4'
-  - model.yolo:
-      detect_ids: [0]
-  - draw.bbox
+      #   source: https://storage.googleapis.com/peekingduck/videos/wave.mp4
+      input_dir: 'C:\Users\csjsh\Downloads\IMG_3226.MP4'
+    #   source: 'C:\Users\csjsh\Downloads\IMG_3226_230205_194043.MP4'
+  - model.efficientdet:
+      detect: ["bird"]
+  #   - model.jde
+
+  #   - dabble.bbox_to_btm_midpoint
+  #   - dabble.zone_count:
+  #       resolution: [1280, 720]
+
+  # zone: [[0, 0]]
+
+  - dabble.tracking:
+      tracking_type: "iou"
+
+  - dabble.statistics:
+      maximum: obj_attrs["ids"]
+  #   - dabble.fps
+  - draw.bbox:
+    #   show_labels: True
+  #   - draw.btm_midpoint
+  - draw.tag:
+      show: ["ids"]
+  #   - dabble.check_large_groups:
+  #       #   maximum: obj_attrs[3]
+  #       obj_attrs: ["bird", 3]
+  - draw.legend:
+      show: ["cum_max"]
+  #   - draw.legend:
+  #   show: ["zone_count"]
   #   - output.screen
   - output.media_writer:
       output_dir: 'C:\Users\csjsh\Downloads'
