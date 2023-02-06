@@ -1,5 +1,7 @@
 # BeijingKaoya
 National AI Student Challenge 2022
+1 minute video: https://youtu.be/dL04S4Sj8XU
+
 
 # Steps to use BeijingKaoya Solution to chase birds away :) 
 1. Install PeekingDuck on your computer 
