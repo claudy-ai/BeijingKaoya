@@ -9,8 +9,10 @@ National AI Student Challenge 2022
 
 2. Ensure you have a webcamera installed to your computer 
 
+3. Git clone this repo by pressing on the green button at the top right indicated as "code"
 
-3. Use the Yml file in the repo and run in your terminal 'peekingduck run; 
+4. Navigate to the Yml file in the repo using "cd" command in your terminaland run the command 'peekingduck run; 
+
 
 
 # Problem Statement : 
