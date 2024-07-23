@@ -1,7 +1,7 @@
 nodes:
   - input.recorded:
       #   replace the link below with the path of your recorded video containing birds
-      input_dir: 'C:\Users\csjsh\Downloads\input_vid.MP4'
+      input_dir: 'Downloads/input_vid.MP4'
 
   - model.efficientdet:
       detect: ["bird"]
